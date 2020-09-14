@@ -1,0 +1,243 @@
+
+co1801904@KLA-138B-16 MINGW64 ~
+$ git config --global user.name "HuyNgPham"
+
+co1801904@KLA-138B-16 MINGW64 ~
+$ git config --global user.mail "PhamNguyenHuy@Gmail.com"
+
+co1801904@KLA-138B-16 MINGW64 ~
+$ git config --global core.editor nano
+
+co1801904@KLA-138B-16 MINGW64 ~
+$ git init
+Initialized empty Git repository in //kla-ophome/student$/co1801904/.git/
+
+co1801904@KLA-138B-16 MINGW64 ~ (master)
+$
+
+co1801904@KLA-138B-16 MINGW64 ~ (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .gitconfig
+        .viminfo
+        Example/
+        bmk-1107-programming and databases/
+        bmk-1107-programming-and-databases/
+        curl
+        index.html-source
+        script.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+co1801904@KLA-138B-16 MINGW64 ~ (master)
+$ cd //kla-ophome/student$/co1801904/.git/
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ touch tools.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ ls
+config  description  HEAD  hooks/  info/  objects/  refs/  tools.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_history
+        ../.gitconfig
+        ../.viminfo
+        ../Example/
+        ../bmk-1107-programming and databases/
+        ../bmk-1107-programming-and-databases/
+        ../curl
+        ../index.html-source
+        ../script.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ cd ..
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .gitconfig
+        .viminfo
+        Example/
+        bmk-1107-programming and databases/
+        bmk-1107-programming-and-databases/
+        curl
+        index.html-source
+        script.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ cd //kla-ophome/student$/co1801904/.git/
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ mv tools.txt //kla-ophome/student$/co1801904
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ cd ..
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ ls
+'bmk-1107-programming and databases'/   Example/            script.sh
+ bmk-1107-programming-and-databases/    index.html-source   tools/
+ curl                                   lecture1.txt/       tools.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .gitconfig
+        .viminfo
+        Example/
+        bmk-1107-programming and databases/
+        bmk-1107-programming-and-databases/
+        curl
+        index.html-source
+        script.sh
+        tools.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ touch story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .gitconfig
+        .viminfo
+        Example/
+        bmk-1107-programming and databases/
+        bmk-1107-programming-and-databases/
+        curl
+        index.html-source
+        script.sh
+        story.txt
+        tools.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git add story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git add -p story.txt
+dNo changes.
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git add file
+fatal: pathspec 'file' did not match any files
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ git add story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ nano story
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ nano story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ cat story.txt
+A d d  a  l o t  o f  t e x t  i n s i d e  !
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ touch "shopping list.txt"
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ ls
+'bmk-1107-programming and databases'/   index.html-source    story.txt
+ bmk-1107-programming-and-databases/    lecture1.txt/        tools/
+ curl                                   script.sh            tools.txt
+ Example/                              'shopping list.txt'
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ nano "shopping list.txt"
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ cat "shopping list.txt"
+gsafd sadsa
+dasdnasdn
+dasnddksff
+fdmf
+sadf
+
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ mv "shopping list.txt" //kla-ophome/student$/co1801904/.git
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ mv "story.txt" //kla-ophome/student$/co1801904/.git
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904 (master)
+$ cd //kla-ophome/student$/co1801904/.git
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ ls
+ config        HEAD     index   objects/  'shopping list.txt'
+ description   hooks/   info/   refs/      story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ mkdir school
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ ls
+ config        HEAD     index   objects/   school/              story.txt
+ description   hooks/   info/   refs/     'shopping list.txt'
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git (master)
+$ cd //kla-ophome/student$/co1801904/.git/school
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git/school (master)
+$ touch tools.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git/school (master)
+$ ls
+tools.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git/school (master)
+$ git commit -m "story.txt is stored at //kla-ophome/student$/co1801904/.git. shopping list.txt is in the same path. School folder is in the same path as well"
+[master (root-commit) 9abe121] story.txt is stored at //kla-ophome/student$/co1801904/.git. shopping list.txt is in the same path. School folder is in the same path as well
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 story.txt
+
+co1801904@KLA-138B-16 MINGW64 //kla-ophome/student$/co1801904/.git/school (master)
+$ git log
+commit 9abe121658f63ac56c4df41355aa132a416a7a0b (HEAD -> master)
+Author: HuyNgPham <Huy.Pham@Centria.Fi>
+Date:   Mon Sep 14 16:30:14 2020 +0300
+
+    story.txt is stored at //kla-ophome/student$/co1801904/.git. shopping list.txt is in the same path. School folder is in the same path as well
+
